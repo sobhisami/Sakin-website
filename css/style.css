@@ -5,12 +5,12 @@ box-sizing: border-box;
 body{
   padding: 0px;
   margin: 0px;
-  font-family: myfont;
+  /* font-family: myfont;*/
 }
-@font-face {
+/* @font-face {
   font-family: myfont;
-  src: url(/font/Montserrat-Arabic-Regular.ttf);
-} 
+  src: url(../font/Montserrat-Arabic-Regular.ttf);
+}  */
 /*general style*/
 .container{
   width: 80%;
@@ -51,6 +51,9 @@ header nav ul{
   margin: 0;
   display: flex;
   align-items: center;
+}
+header nav ul.open{
+  display: block;
 }
 header nav .btn{
   display: none;
@@ -403,6 +406,13 @@ main .right-side .chat div:last-of-type{
    @media (max-width: 600px) {
     header nav ul{
       display: none;
+      flex-direction: column;
+      padding: 10px 40px 0px;
+    }
+ 
+    header nav ul li{
+      padding: 10px 0;
+      font-size: 20px;
     }
     header nav .btn{
       display: block;
